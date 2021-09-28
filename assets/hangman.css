@@ -22,6 +22,11 @@ header h1 {
   margin-right: 25%;
 }
 
+.containerImg img {
+  width: 100%;
+  height: 100%;
+}
+
 .containerWord {
   background-color: hotpink;
   width: 50%;
