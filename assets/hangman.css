@@ -1,0 +1,88 @@
+body {
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  height: 7rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  padding: 2rem;
+}
+
+.containerImg {
+  background-color: gray;
+  width: 50%;
+  height: 25rem;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.containerWord {
+  background-color: hotpink;
+  width: 50%;
+  height: 10rem;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.game {
+  text-align: center;
+  line-height: 200%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 1rem;
+}
+
+.instruction {
+  color: white;
+  text-align: center;
+  font-size: large;
+  margin-left: 35%;
+}
+
+@media (max-width: 300px) {
+  .containerImg {
+    width: 100%;
+    margin: 0%;
+  }
+  .containerWord {
+    width: 100%;
+    margin: 0%;
+  }
+  .game {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .instruction {
+    margin-left: 25%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .containerImg {
+    width: 100%;
+    margin: 0%;
+  }
+  .containerWord {
+    width: 100%;
+    margin: 0%;
+  }
+  .game {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .instruction {
+    margin-left: 25%;
+    margin-right: 5%;
+  }
+}
+/*# sourceMappingURL=hangman.css.map */
