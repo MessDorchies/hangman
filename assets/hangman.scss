@@ -9,6 +9,7 @@ header{
     text-align: center;
     h1{
         padding: 2rem;
+        text-decoration: underline;
     }
 }
 .containerImg{
@@ -23,11 +24,12 @@ header{
     }
 }
 .containerWord{
-    background-color: hotpink;
+    background-color: gray;
     width: 50%;
     height: 10rem;
     margin-left: 25%;
     margin-right: 25%;
+    padding-top: 1rem;
 }
 .game{
     text-align: center;
