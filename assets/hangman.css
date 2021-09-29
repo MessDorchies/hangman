@@ -16,7 +16,7 @@ header h1 {
 }
 
 .containerImg {
-  background-color: gray;
+  background-color: black;
   width: 50%;
   height: 25rem;
   margin-left: 25%;
@@ -29,7 +29,7 @@ header h1 {
 }
 
 .containerWord {
-  background-color: gray;
+  background-color: black;
   width: 50%;
   height: 10rem;
   margin-left: 25%;
