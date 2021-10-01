@@ -15,7 +15,10 @@ let masqued = "";
 
 function gameStart(){
     let temp = "";
+    game.value= "";
     life = 7;
+    itsWin = false;
+    itsGameOver = false;
     already.innerHTML = "";
     lifeDisplay.innerHTML = life + " lives left";
     randWord = wordsList[Math.floor(Math.random() * wordsList.length)];
@@ -29,18 +32,16 @@ function gameStart(){
 function CheckLetter(){
     let value = "";
     let temp = "";
-    (game.value.length > 1) ? alert("Please enter only one letter") : value = game.value;
-    
+    let isValide = false;
+    (game.value.length === 1) ? isValide = true : isValide = false;
+    (isValide) ?  value = game.value : alert("Please enter a letter");
     for(let i = 0; i < randWord.length; i++){
         (value === randWord[i]) ? temp += value : (masqued[i] != "_") ? temp += masqued[i] : temp += "_";
     };
 
-    (temp === masqued) ? life-- : life = life;
+    ((temp === masqued)&&(isValide === true)) ? life-- : life = life;
     lifeDisplay.innerHTML = life + " lives left";
     already.innerHTML += value;
-    console.log(life);
-    console.log(value);
-    console.log(temp);
     game.value = "";
     return temp;
     
@@ -72,6 +73,10 @@ enter.addEventListener('click', () => {
     (life === 0) ? itsGameOver = true : itsGameOver = false;
     image.src = "assets/image/state"+life+".png";
     (itsGameOver) ? lifeDisplay.innerHTML = "Game Over !" : itsGameOver = false;
-    (itsWin) ? lifeDisplay.innerHTML = "You Win !" : itsWin = itsWin;
+    if(itsWin){
+        lifeDisplay.innerHTML = "You Win !";
+        field.innerHTML = "If you want to plays again hit play!";
+        enter.setAttribute('disabled','true');
+    }
 
 });
