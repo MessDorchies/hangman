@@ -1,4 +1,4 @@
-let wordsList = [
+const wordsList = [
     "ability",
     "able",
     "about",

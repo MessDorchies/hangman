@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/hangman.css">
-    <script src="assets/hangman.js"></script>
-    <script src="assets/words.js"></script>
     <title>hangman</title>
 </head>
 <body>
@@ -15,16 +13,21 @@
         <h1>Hangman</h1>
     </header>
     <main>
+        <section class="lifeDisplay" id="lifeDisplay"></section>
         <section class="containerImg">
-            <img src="assets/image/hangmanPlaceHolder.jpg" alt="hangman">
+            <img src="assets/image/state7.png" alt="hangman" id="state">
         </section>
         <section class="containerWord">
-            <label for="game" class="instruction">Input a letter to guess the word.</label>
+            <label for="game" id="instruction" class="instruction">Press play to start a game</label>
             <input type="text" id="game" class="game">
+            <input type="button" id="play" value="play" class="play">
+            <input type="button" id="enter" value="enter" class="enter">
         </section>
+        <section class="Already" id="Already"></section>
     </main>
     <footer>
-        
+        <script src="assets/hangman.js"></script>
+        <script src="assets/words.js"></script>
     </footer>
 </body>
 </html>
