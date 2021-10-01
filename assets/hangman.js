@@ -12,9 +12,11 @@ let itsGameOver = false;
 let life = 7;
 let randWord = "";
 let masqued = "";
+enter.setAttribute('disabled','true');
 
 function gameStart(){
     let temp = "";
+    enter.removeAttribute('disabled');
     game.value= "";
     life = 7;
     itsWin = false;
@@ -55,7 +57,6 @@ play.addEventListener('click', () => {
 });
 
 enter.addEventListener('click', () => {
-
     masqued = CheckLetter();
     field.innerHTML = masqued;
     for(let i = 0 ; i < masqued.length; i++){
