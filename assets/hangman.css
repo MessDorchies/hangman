@@ -91,6 +91,7 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  letter-spacing: 2px;
   color: silver;
   text-align: center;
   font-size: large;
@@ -132,6 +133,14 @@ header h1 {
 }
 
 @media (max-width: 300px) {
+  header {
+    width: 100%;
+    margin: 0%;
+  }
+  .lifeDisplay {
+    width: 100%;
+    margin: 0%;
+  }
   .containerImg {
     width: 100%;
     margin: 0%;
@@ -148,10 +157,22 @@ header h1 {
   .instruction {
     margin-left: 25%;
     margin-right: 5%;
+  }
+  .Already {
+    width: 100%;
+    margin: 0%;
   }
 }
 
 @media (max-width: 650px) {
+  header {
+    width: 100%;
+    margin: 0%;
+  }
+  .lifeDisplay {
+    width: 100%;
+    margin: 0%;
+  }
   .containerImg {
     width: 100%;
     margin: 0%;
@@ -168,6 +189,10 @@ header h1 {
   .instruction {
     margin-left: 25%;
     margin-right: 5%;
+  }
+  .Already {
+    width: 100%;
+    margin: 0%;
   }
 }
 /*# sourceMappingURL=hangman.css.map */

@@ -15,6 +15,8 @@ let masqued = "";
 
 function gameStart(){
     let temp = "";
+    life = 7;
+    already.innerHTML = "";
     lifeDisplay.innerHTML = life + " lives left";
     randWord = wordsList[Math.floor(Math.random() * wordsList.length)];
     console.log(randWord);
